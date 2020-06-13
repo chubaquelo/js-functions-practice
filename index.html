@@ -1,0 +1,41 @@
+<html>
+    <header>
+        <script>
+            function add7(num) {
+                return Number(num) + 7;
+            }
+
+            function multiply(num1,num2){
+                return num1*num2;
+            }
+
+            function capitalize(str) {
+                newstr = str.toLowerCase();
+                newstr = newstr.charAt(0).toUpperCase() + newstr.slice(1);
+                return newstr;
+                // newstr = newstr.capitalize();
+                // return newstr;
+            }
+
+            function lastLetter(str) {
+                // lastpos = str.length -1;
+                newstr = str.charAt(str.length-1);
+                return newstr;
+            }
+
+            numej1 = prompt('Ingresa un numero para sumarle 7:');
+            num1ej2 = prompt('Resultado: '+ add7(numej1)+'. Ahora ingresa dos numeros para multiplicarlos. Ingresa el primero.');
+            num2ej2 = prompt('Ahora el segundo numero: ');
+            textej3 = prompt('El resultado es: '+ multiply(num1ej2,num2ej2) +' Muy bien. Ahora ingresa un texto para capitalizar.');
+            lastlet = prompt('El texto capitalizado sería: '+ capitalize(textej3) + ' Bueno ahora ingresa un texto para devolver el ultimo caracter.');
+            prompt('El ultimo caracter es '+ lastLetter(lastlet)+ ' Listo.');
+
+
+        </script>
+    </header>
+
+    <body>
+
+
+    </body>
+</html>
